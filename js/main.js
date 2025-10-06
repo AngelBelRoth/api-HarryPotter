@@ -12,5 +12,14 @@ function checkCharacter() {
             document.querySelector(".picture").src = data[0].image;
             document.querySelector("h2").innerText = data[0].hogwartsHouse;
 
+            const house = data[0].hogwartsHouse;
+            const urlHouse = `https://hp-api.onrender.com/api/characters/house/${house}`
+            fetch(urlHouse)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                })
         })
 }
+
+//Michael Kazin helped me with these apis
