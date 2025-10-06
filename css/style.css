@@ -6,11 +6,14 @@
   align-items: center;
   font-family: "Rouge Script", cursive;
   font-size: 1.3rem;
+  background: black;
+  color: white;
 }
 
 .HogwartsEmblem {
   display: block;
   margin: 0 auto;
+  margin-top: 2%;
   max-width: 20%;
 }
 
@@ -27,6 +30,12 @@ h2{
   border-radius: 10px;
 }
 
+input{
+  background: hsl(148deg 0% 13%);
+  border-radius: 3px;
+}
+
 button {
   margin: 1%;
+  border-radius: 5px;
 }
